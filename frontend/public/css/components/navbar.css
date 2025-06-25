@@ -1,0 +1,52 @@
+.header {
+    /* display: grid;
+    grid-template-columns: repeat(1fr, 1); */
+    position: fixed; /* Posicion fija */
+    top: 0; /* Altura Total*/
+    width: 100%;
+}
+
+
+.navbar__title {
+    margin: 0;
+    padding: 12px;
+    font-size: var(--fs-md);
+    text-align: center;
+}
+
+.navbar__subtitle {
+    font-size: var(--fs-xs);
+    color: var(--gray-700);    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; /* Direccion de los elementos */
+    margin: 0 auto; /* Este peagdo a la margen y utilice automaticamente el ancho*/
+    width: 100%;
+    background-color: var(--primary-900);
+}
+
+.navbar__list{
+    list-style: none; /* Elimina los puentos de la lista de elementos*/
+    padding: 4px;
+    margin: 0;
+    display: flex; /* Elementos en linea a lo horizontal*/
+    gap: 40px; /* Separacion de elementos */
+    flex-grow: 1;
+    justify-content: space-between; /* Separacion uniforme a lo ancho del elemento segun el total de los elementos*/
+}
+
+/* .navbar__item {
+
+} */
+
+.navbar__link {
+    text-decoration: none; /* Elimina el decorador de las refencias*/
+    color: var(--white);
+    transition: color 0.3s ease; /* Efecto*/
+}
+
+.navbar__link:hover {
+    color: var(--secundary-950);
+}

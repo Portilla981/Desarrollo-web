@@ -2,7 +2,7 @@
     /* display: grid;
     grid-template-columns: repeat(1fr, 1); */
     position: fixed;
-    /* Posicion fija */
+    /* Posición fija */
     top: 0;
     /* Altura Total*/
     width: 100%;
@@ -12,21 +12,23 @@
 .navbar__title {
     margin: 0;
     padding: 12px;
-    font-size: var(--fs-md);
+    font-size: var(--fs-xs);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar__subtitle {
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxs);
     color: var(--gray-700);
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
-    /* Direccion de los elementos */
+    /* Dirección de los elementos */
     margin: 0 auto;
-    /* Este peagdo a la margen y utilice automaticamente el ancho*/
+    /* Este pegado a la margen y utilice automáticamente el ancho*/
     width: 100%;
     background-color: var(--primary-900);
 }
@@ -42,10 +44,10 @@
     text-align: center;
     padding: 0.8rem;
     text-decoration: none;
-    /* Elimina el decorador de las refencias*/
+    /* Elimina el decorador de las referencias*/
     color: var(--white);
     /* Tamaño de la fuente */
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxxs);
     /* Efecto*/
     transition: color 0.3s ease;    
 }
@@ -54,6 +56,7 @@
 .navbar__link:hover {
     color: var(--secundary-950);
 }
+
 
 p {
     font-size: var(--fs-md);
@@ -64,30 +67,41 @@ p {
     gap: 0;
     width: 100%;
     list-style: none;
+    padding: 4px;
+    font-size: var(--fs-xxs);
 }
 
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
 
-
     .navbar__list {
         list-style: none;
-        /* Elimina los puentos de la lista de elementos*/
+        /* Elimina los puntos de la lista de elementos*/
         padding: 4px;
         margin: 0;
         display: flex;
         flex-direction: row;
         /* Elementos en linea a lo horizontal*/
-        gap: 40px;
-        /* Separacion de elementos */
+        /* gap: 60px; */
+        /* Separación de elementos */
         flex-grow: 1;
         justify-content: space-evenly;
-        /* Separacion uniforme a lo ancho del elemento segun el total de los elementos*/
-        /*font-size: var(--fs-xs);*/
+        /* Separación uniforme a lo ancho del elemento según el total de los elementos*/        
     }
 
+    .navbar__link {    
+    font-size: var(--fs-xs);
+    
+}
 
+.navbar__title {
+    font-size: var(--fs-md);    
+}
 
+.navbar__subtitle {
+    font-size: var(--fs-xs);
+    /* color: var(--gray-700); */
+}
 
 
 }

@@ -2,19 +2,22 @@
 
 /* Distribución general (fondo del body, display, flexbox, grid, alturas, anchos, etc.). */
 
-/* html {
-    margin: 0;
+html {
+    /* margin: 0; */
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
-} */
+}
 
 body {
     /* background-color: var(--gray-900); */
     font-family: var(--main-font);
     color: var(--black);
+    margin: 0;
+    padding: 0;
     
 }
 

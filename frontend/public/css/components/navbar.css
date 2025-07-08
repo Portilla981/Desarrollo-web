@@ -1,11 +1,12 @@
 .header {
     /* display: grid;
     grid-template-columns: repeat(1fr, 1); */
-    position: fixed;
+    position: static;
     /* Posición fija */
     top: 0;
     /* Altura Total*/
     width: 100%;
+    z-index: 1000;
 }
 
 
@@ -14,8 +15,8 @@
     padding: 12px;
     font-size: var(--fs-xs);
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .navbar__subtitle {
@@ -33,11 +34,19 @@
     background-color: var(--primary-900);
 }
 
-/* Mobile firts */
-.navbar__items {
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
     width: 100%;
+    list-style: none;
+    padding: 0;
+    /* font-size: var(--fs-xxs); */
 }
 
+
+/* Mobile firts */
 
 .navbar__link {
     display: block;
@@ -47,61 +56,63 @@
     /* Elimina el decorador de las referencias*/
     color: var(--white);
     /* Tamaño de la fuente */
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     /* Efecto*/
     transition: color 0.3s ease;    
 }
-
 
 .navbar__link:hover {
     color: var(--secundary-950);
 }
 
 
+.navbar__link.active{
+    background-color: var(--white);
+    color: var(--primary-900);
+    /* border-radius: 15px; */
+    /* clip-path: ellipse(50% 30% at 50% 50%); */
+    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    width: 150px;
+}
+
+
+
 p {
     font-size: var(--fs-md);
 }
 
-.navbar__list {
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-    list-style: none;
-    padding: 4px;
-    font-size: var(--fs-xxs);
-}
 
 /* Determinar el estilo responsive de la lista de la barra */
 @media (width > 768px) {
 
     .navbar__list {
-        list-style: none;
+        /* list-style: none; */
         /* Elimina los puntos de la lista de elementos*/
-        padding: 4px;
+        /* padding: 4px; */
         margin: 0;
         display: flex;
         flex-direction: row;
         /* Elementos en linea a lo horizontal*/
-        /* gap: 60px; */
+        gap: 40px;
         /* Separación de elementos */
         flex-grow: 1;
         justify-content: space-evenly;
         /* Separación uniforme a lo ancho del elemento según el total de los elementos*/        
     }
 
-    .navbar__link {    
-    font-size: var(--fs-xs);
+    /* .navbar__link {    
+    font-size: var(--fs-xs); */
     
 }
 
-.navbar__title {
+/* .navbar__title {
     font-size: var(--fs-md);    
 }
 
 .navbar__subtitle {
     font-size: var(--fs-xs);
-    /* color: var(--gray-700); */
-}
+    /* color: var(--gray-700); 
+} */
 
 
-}

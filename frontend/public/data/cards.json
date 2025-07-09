@@ -1,0 +1,27 @@
+[   
+    
+    {
+        "id": "diseño web",
+        "title": "Diseño Web",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>El mejor diseño para tu sitio web"
+    },
+
+    {
+        "id": "diseño web",
+        "title": "Desarrollo movil",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>para andoid e iOS"
+    },
+
+    {
+        "id": "diseño web",
+        "title": "Base de datos",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
+    }
+
+]

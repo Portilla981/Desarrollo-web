@@ -1,0 +1,75 @@
+.sesion_inicio{
+    background-image: url(/frontend/public/assets/vanagro/image1.png);
+    /* image-rendering: auto; */
+    background-position: center;
+    /* background-size: ; */
+    height: 50rem;
+    position: relative;
+    text-align: center;      
+    
+}
+
+.inicio-sesion-container{
+    display: flex;
+    justify-content: center;
+    font-size: var(--fs-sm);
+}
+
+.inicio__subtitle{
+    margin: 0;
+    padding: 15px;
+    color: black;
+}
+
+.inicio-sesion{
+    background-color: rgba(216, 248, 227, 0.2);
+    margin: 4rem;
+    position: absolute;
+    border: 2px solid black;
+    width: 40rem;
+    padding: 2rem;
+    height: 45rem;
+    z-index: 100;
+    border-radius: 5rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--primary-400);
+}
+
+
+label {
+    color: black;
+    font-size: var(--fs-sm);
+}
+
+input{
+    padding: 1rem;
+    width: 30rem;
+    border-radius: 1rem;
+    background-color: var(--gray-200);    
+}
+
+.inicio-button__enlaces{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+button{
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 1rem; 
+    font-size: var(--fs-xs);     
+}
+
+.btn-iniciar{
+    background-color: var(--primary-950);
+}
+
+.btn-crear{
+    background-color: var(--secundary-950);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(45, 11, 201);   
+}

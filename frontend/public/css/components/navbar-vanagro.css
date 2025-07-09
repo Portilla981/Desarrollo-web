@@ -10,6 +10,13 @@
     background-color: var(--primary-900);
 }
 
+ion-icon {
+    padding: 1rem;
+    font-size: 48px;
+    color: aliceblue;
+    position: absolute;
+}
+
 
 .navbar-vanagro__title {
     margin: 0;

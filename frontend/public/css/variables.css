@@ -43,7 +43,7 @@
     --gray-50: #E9E9E9;
 
     /* Font-family */
-    --main-font: Helvetica, Arial, sans-serif;
+    --main-font: Helvetica, Arial, sans-serif, Lato merriweather sans-serif;
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */

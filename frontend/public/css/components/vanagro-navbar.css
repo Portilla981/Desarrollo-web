@@ -1,0 +1,81 @@
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+.header-vanagro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(233, 145, 145);
+}
+
+.navbar-vanagro__title{
+    max-width: 5rem;
+}
+
+.navbar-vanagro__subtitle{
+    max-width: 5rem;
+}
+
+
+.navbar-vanagro__list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-vanagro__list a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-vanagro {
+    display: none;
+}
+
+.button-vanagro, 
+.navbar__button{
+    display: none;
+}
+
+@media (width < 768px){
+
+    .button-vanagro, 
+    .navbar__button{
+        display: block;
+    }
+
+
+    .navbar-vanagro{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(63, 57, 57);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .05);
+    }
+
+    .navbar-vanagro.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar-vanagro__list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .navbar-vanagro__list li a{
+        color: aliceblue;
+    }
+
+
+}

@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (navbarElement) {
         fetch("/frontend/public/views/components/navbar_vanagro.html")
             .then(response => response.text())
-            .then(data => {
-                navbarElement.innerHTML = data;
+            .then(data => {navbarElement.innerHTML = data;
                 const currentPage = window.location.pathname.split("/").pop() || "index_vanagro.html";
                 const navLinks = navbarElement.querySelectorAll(".navbar-vanagro__link");
                 navLinks.forEach(link => {
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
             })
-            .catch(error => console.error("Error de carga el navbar", error));
+            .catch(error => console.error("Error al cargar el navbar", error));
     }
 
 });

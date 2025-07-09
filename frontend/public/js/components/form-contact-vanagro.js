@@ -13,6 +13,24 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // accion por la cual se realiza la accion de escucha del documento antes de realizar un accion o funcion, resumen del llamado 
 // document.addEventListener("DOMContentLoaded", function () {
 

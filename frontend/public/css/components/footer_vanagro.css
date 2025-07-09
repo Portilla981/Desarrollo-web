@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer-vanagro {
+  background-color: var(--primary-900); 
+  color: var(--black);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.footer-vanagro__contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-vanagro__texto {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-vanagro__redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-vanagro__icono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-vanagro__icono i {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer-vanagro__redes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-vanagro__icono {
+    justify-content: center;
+  }
+}
+

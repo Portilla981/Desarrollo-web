@@ -6,6 +6,7 @@ body {
   padding: 0;
 }
 
+/* Contenedor principal del formulario con fondo blanco, sombra, centrado y padding amplio. */
 .formulario-container {
   background-color: var(--white);
   padding: 50px;
@@ -31,6 +32,7 @@ form {
   gap: 40px;
 }
 
+/* Grupo de campos alineados horizontalmente con espacio entre ellos. */
 .grupo-input {
   display: flex;
   gap: 30px;

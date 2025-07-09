@@ -24,6 +24,7 @@ ion-icon {
 
 
 
+
 .navbar-vanagro__title {
     margin: 0;
     padding: 3rem;
@@ -78,19 +79,9 @@ ion-icon {
 }
 
 .navbar-vanagro__link:hover {
-    background-color: aliceblue;
     color: var(--secundary-950);
-}
-
-
-.navbar-vanagro__link.active {
-    background-color: var(--white);
-    color: var(--primary-950);
-    /* border-radius: 15px; */
-    /* clip-path: ellipse(50% 30% at 50% 50%); */
-    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    width: 150px;
+    font-size: var(--fs-md);
+    padding: 2px;
 }
 
 
@@ -122,7 +113,16 @@ p {
         right: 4rem;
     }
 
+    ion-icon:hover{
+        color: var(--secundary-950);
+        
+    }
 
+    .header__carrito:hover{
+        color: var(--secundary-950);
+        cursor: pointer;
+    }
+    
     .navbar-vanagro__list {
         /* list-style: none; */
         /* Elimina los puntos de la lista de elementos*/
@@ -146,4 +146,13 @@ p {
         display: none;
     }
 
+    .navbar-vanagro__link.active {
+        background-color: var(--white);
+        color: var(--primary-950);
+        /* border-radius: 15px; */
+        /* clip-path: ellipse(50% 30% at 50% 50%); */
+        /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        width: 150px;
+    }
 }

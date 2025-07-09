@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/frontend/public/css/main.css">
+  <script src="/frontend/public/js/components/form-contact-vanagro.js" defer></script>
+  <!-- <script src="/frontend/public/js/components/-----------------" defer></script> -->
+</head>
+<body>
+
+    <header class="header-vanagro">
+        <div class="navbar-vanagro-container"></div>
+    </header>
+
+    <br>
+    <h2>CONTÁCTANOS</h2>
+    <br>
+    <p>Estamos para ayudarte con pedidos, soporte y preguntas.</p>
+
+    <section class="formulario-container">
+    <!-- <h2>CONTÁCTANOS</h2>
+    <p>Estamos para ayudarte con pedidos, soporte y preguntas.</p> -->
+
+    <form id="formulario-contacto">
+        <div class="grupo-input">
+        <input type="text" placeholder="Nombres" required>
+        <input type="text" placeholder="Apellidos" required>
+        </div>
+
+        <div class="grupo-input">
+        <input type="tel" placeholder="Teléfono" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        </div>
+
+        <textarea placeholder="¿En qué podemos ayudarte?" required></textarea>
+
+        <div class="botones">
+        <button type="submit" class="btn-enviar">Enviar</button>
+        <button type="button" class="btn-cancelar" onclick="cancelarFormulario()">Cancelar</button>
+        </div>
+    </form>
+    </section>
+
+    </body>
+    </html>

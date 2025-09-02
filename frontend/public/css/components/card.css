@@ -1,4 +1,10 @@
-.cards-container{
+.services{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.services__cards-container{
     display: grid;
     gap: 24px;
     justify-content: center;
@@ -53,18 +59,33 @@
 
 @media (width > 640px){
 
-    .cards-container{
+    .services__cards-container{
         grid-template-columns: repeat(2, 1fr);
         max-width: 90%;
         margin:  100px auto;
+    }
+
+    .card{
+        min-width: 320px;
     }
 
 }
 
 @media (width > 1024px){
 
-    .cards-container{
-        grid-template-columns: repeat(3,1fr);
+    .services__cards-container{
+        grid-template-columns: repeat(4,1fr);
         max-width: 90%;
     }
 }
+
+/* ==== Breakpoints ====== */
+/* 
+Alias       max-width       uso tipico
+sm          640px           Telefonos grandes
+md          768px           Tablests
+lg          1024px          Laptos
+xl          1280px          Desktop
+2x1         1536px          BigScreem
+
+*/

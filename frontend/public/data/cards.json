@@ -24,4 +24,51 @@
         "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
     }
 
+    ,
+
+    {
+        "id": "diseño web",
+        "title": "Base de datos",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
+    }
+
+    ,
+
+    {
+        "id": "diseño web",
+        "title": "Base de datos",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
+    }
+    ,
+
+    {
+        "id": "diseño web",
+        "title": "Base de datos",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
+    }
+    ,
+
+    {
+        "id": "diseño web",
+        "title": "Base de datos",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
+    }
+    ,
+
+    {
+        "id": "diseño web",
+        "title": "Base de datos",
+        "icon1": "../assets/icon/compu.svg",
+        "icon2": "../assets/icon/base.svg",
+        "description": "Volvemos tus idesa realidad<br>Bases de datos seguras y esclables"
+    }
+
 ]

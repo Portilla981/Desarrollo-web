@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const formdata = new FormData(form); 
             const data = Object.fromEntries(formdata);
 
+            try{
+
+                const response
+            }
+
         });
     };
 });

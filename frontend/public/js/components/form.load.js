@@ -1,0 +1,21 @@
+
+//haga una busquesa o escuche un evento en el dom y async(intente) hasta que se acabe
+document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.querySelector(".servives__form-container");
+
+    if (container){
+        const response = await fetch("/frontend/public/views/components/form.html")
+
+        const html = await response.text();
+        container.innerHTML = html;
+
+    
+
+    //carga la logica del formulario
+    const script = document.createElement('script');
+    script.src = "/frontend/public/js/components/form.logic.js";
+    document.body.appendChild(script);
+    }
+
+
+});

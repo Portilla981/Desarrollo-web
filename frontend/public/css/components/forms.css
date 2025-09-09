@@ -1,93 +1,79 @@
-/* body {          
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;    
-} */
-
-.form-container {    
+.contact-form{
+    background-color: var(--gray-600);
     padding: 24px;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: solid 0.1rem var(--primary-950);
-}
-
-.form-title {
-    margin-bottom: var(--fs-sm);
-}
-
-.form {
+    border-radius: 2px;
+    max-width: 712px;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 48px;    
+    gap: 24px;
 }
 
-.form__user-info,
-.form__password-section {
-    display: flex;
-    flex-direction: column;   
-    justify-content: center; 
-    width: 320px;    
+.contact-form__title{
+    text-align: center;
+    color: var(--terciary-200);
+    font-size: var(--fs-sm);
+
 }
 
-@media (width < 768px) {
-    .form{
+.contact-form__form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px
+}
+
+.contact-form__row{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px
+}
+
+.contact-form__label{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
+        gap: 4px;
+        font-size: var(--fs-xxxs);
+        color: var(--white)
     }
-}
 
-.form__label {
-    margin-bottom: 4px;
-    text-align: left;
-    font-size: var(--fs-xxs);
-}
+    .contact-form__input{
+        padding: 16px;
+        border-radius: 2px;
+        border: none;
+        width: 100%;
+        font-size: var(--fs-xs);
 
-.form__input {
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
+    }
 
-.form__button {
-    background-color: transparent;
-    color: var(--white);    
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: var(--fs-xs);
-    border: solid 0.2rem var(--white);
+    .contact-form__textarea{
+        min-height: 100px;
+        /* permite la redimension en vertical, si no se coloca la redimension es permitida a cualquier lado */
+        resize: vertical;
+    }
+
+    .contact-form__input ::placeholder,
+    .contact-form__textarea::placeholder{
+        color: var(--gray-300);
+        font-size: var(--fs-xs);        
+    }
+
+    .contact-form__button{
+        justify-self: center;
+        padding: 12px 24px;
+        background-color: var(--white);
+        /* border: none; */
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid var(--black);
+        font-size: var(--fs-sm)
+
+    }
+
+
+@media (width > 768px){
+    .contact-form__row{
+        grid-template-columns: 1fr 1fr;
+    }
+
     
-}
 
-.form__input::placeholder {
-    color: var(--gray-500);    
-    font-size: var(--fs-xxs);
-    opacity: 0.7; /* Asegura que no sea semi-transparente */
-}
 
-.form__button--primary {
-    padding: 12px;
-    margin: 20px;
-}
-
-.form__button--primary:hover {    
-    color: var(--white);
-    border: solid 0.2rem;
-    background-color: var(--primary-950);
-}
-
-.form__button--secondary {
-    padding: 10px;
-    margin: 20px 60px;
-}
-
-.form__button--secondary:hover {    
-    color: var(--primary-950);
-    border: solid 0.2rem;
-    background-color: var(--white);
 }

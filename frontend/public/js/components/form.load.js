@@ -1,7 +1,7 @@
 
 //haga una busquesa o escuche un evento en el dom y async(intente) hasta que se acabe
 document.addEventListener("DOMContentLoaded", async () => {
-    const container = document.querySelector(".servives__form-container");
+    const container = document.querySelector(".services__form-container");
 
     if (container){
         const response = await fetch("/frontend/public/views/components/form.html")
